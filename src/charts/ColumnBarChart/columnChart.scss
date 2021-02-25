@@ -1,0 +1,78 @@
+.horizontal-bar-chart {
+  overflow: visible;
+
+  &__tooltip {
+    position: relative;
+    pointer-events: none;
+
+    &--active {
+      .horizontal-bar-chart__content,
+      .horizontal-bar-chart__container {
+        background: #4eab98;
+        color: white;
+      }
+
+      .horizontal-bar-chart__arrow:after {
+        border-right: 18px solid #4eab98;
+      }
+    }
+  }
+
+  &__circle-group {
+    pointer-events: none;
+  }
+
+  &__container {
+    display: flex;
+    border-radius: 4rem;
+    border: 1px solid #4eab98;
+    width: 54px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #00cba6;
+    background: black;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    z-index: 2;
+    background: black;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: -8px;
+    top: 3px;
+    flex-shrink: 0;
+    border-top: 0;
+    border-right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #4eab98;
+    border-bottom: 10px solid transparent;
+  }
+
+  &__arrow:after {
+    position: absolute;
+    left: 2px;
+    top: -9px;
+    flex-shrink: 0;
+    border-top: 0;
+    border-right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 18px solid black;
+    border-bottom: 9px solid transparent;
+  }
+}

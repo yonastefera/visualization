@@ -1,0 +1,60 @@
+.bar-chart {
+  overflow: visible;
+
+  &__tooltip {
+    position: relative;
+    pointer-events: none;
+
+    &--active {
+      .bar-chart__content,
+      .bar-chart__container,
+      .bar-chart__arrow {
+        background: #4eab98;
+        color: white;
+      }
+    }
+  }
+
+  &__circle-group {
+    pointer-events: none;
+  }
+
+  &__container {
+    display: flex;
+    border-radius: 4rem;
+    border: 1px solid #4eab98;
+    width: 54px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #00cba6;
+    background: black;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    z-index: 2;
+    background: black;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    border: 1px solid #4eab98;
+    border-top: 0;
+    border-left: 0;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: black;
+  }
+}
