@@ -1,4 +1,4 @@
-Live sample https://yonastefera.github.io/d3charts/
+Live sample https://yonastefera.github.io/visualization/
 
 In this repo you can see my d3.js sample charts
 
