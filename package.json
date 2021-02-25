@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development parcel src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html",
+    "build": "NODE_ENV=production parcel build src/index.html  --public-url https://yonastefera.github.io/visualization/",
     "predeploy": "npm run clean && npm run build",
     "clean": "gh-pages-clean",
     "deploy": "gh-pages -d dist",
