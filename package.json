@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yonastefera/d3charts.git"
+    "url": "git+https://github.com/yonastefera/visualization.git"
   },
   "bugs": {
-    "url": "https://github.com/yonastefera/d3charts/issues"
+    "url": "https://github.com/yonastefera/visualization/issues"
   },
-  "homepage": "https://github.com/yonastefera/d3charts#readme",
+  "homepage": "https://github.com/yonastefera/visualization#readme",
   "lint-staged": {
     "*.{js, json,css,md}": [
       "prettier --write",
